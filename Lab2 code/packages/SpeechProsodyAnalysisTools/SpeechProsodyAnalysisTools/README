@@ -1,0 +1,61 @@
+This software consists of a series of Matlab routines useful for
+various aspects of prosodic analysis of speech, in particular F0
+and harmonic analysis, loudness analysis, and voice-source analysis. 
+Much of this software was written to support the research outlined
+in "A Computational Model for the Automatic Recognition of Affect in
+Speech" (downloadable from http://web.media.mit.edu/~galt/phdthesis.pdf).
+You may find it most useful if you're familiar with that work. 
+
+It is free software; you can redistribute it and/or modify it under the 
+terms of the GNU General Public License as published by the Free Software 
+Foundation; either version 2 of the License, or (at your option) any 
+later version.
+
+This program is distributed in the hope that it will be useful, but 
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License 
+for more details.
+
+To access all the routines, you may want to run the setUpPaths.m file
+included in this distribution, or modify your MATLAB setup to run it
+at start-up time. 
+
+The Contents.m file includes a high-level description of the routines
+included in this package. For more specific information on how to use
+a particular routine, type HELP and the routine name under the MATLAB
+environment.
+
+There are 3 main directories in this distribution
+	./Voice_Source
+	./F0_HarmonicAnalysis
+	./Loudness
+which include various subroutines for the analysis of voice source,
+harmonic analysis, and loudness respectively. In addition, the
+	./Utils
+subdirectory contains various utilities that you may find useful outside
+of the above applications. I have also released various MATLAB routines
+not authored by me. These are included in
+	./Utils/DIN_2045631_V201.4.20
+	./Utils/Voicebox
+The software included there has been made publically and freely available
+before, and has been used here to support the work which I have authored.
+I am redistributing it further to facilitate running my code. Note that
+there is at least one routine in this package which invokes a licensed 
+MATLAB function (e.g., from the Optimization Toolbox), which I'm unable 
+to release. So you may need to have access to the appropriate toolboxes 
+to run some of the code above.
+
+If you find the code here useful, and you publish any results obtained with
+the help of it, consider crediting it with one of the following 
+references in your paper:
+
+- R. Fernandez, "A Computational Model for the Automatic Recognition of Affect
+in Speech," Ph.D. dissertation, (http://affect.media.mit.edu/pdfs/04.fernandez-phd.pdf),
+Media Arts and Sciences, Massachusetts Institute of Technology, 2004.
+
+- R. Fernandez and R. W. Picard, "Classical and Novel Discriminant Features
+for Affect Recognition from Speech," Proc. Interspeech 2005, pp. 473-476,
+Lisbon, Portugal, 2005.
+
+
+
